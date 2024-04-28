@@ -6,7 +6,7 @@ export const NoteView = () => {
   return (
     <Grid container direction='row' justifyContent='space-between' alignItems='center' sx={{ mb: 1}}>
         <Grid item>
-            <Typography fontSize={ 39 } fontWeight='light'>New Note</Typography>
+            <Typography fontSize={ 39 } fontWeight='light'>April 28th 2024</Typography>
         </Grid> 
         <Grid item>
             <Button color="primary" sx={{padding: 2}}>
@@ -14,7 +14,7 @@ export const NoteView = () => {
                 Save
             </Button>
         </Grid>
-        <Grid>
+        <Grid container>
             <TextField
                 type="text"
                 variant="filled"
@@ -30,7 +30,6 @@ export const NoteView = () => {
                 fullWidth
                 multiline
                 placeholder="What happened today?..."
-                label="Title"
                 minRows={ 5 }
             />
         </Grid>
